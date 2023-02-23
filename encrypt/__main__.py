@@ -1,4 +1,4 @@
-from encrypt import haversine
+from encrypt.encrypt import haversine
 
 if __name__ == "__main__":
     import argparse
