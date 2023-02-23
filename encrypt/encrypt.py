@@ -22,3 +22,11 @@ def haversine(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
     c = 2 * asin(sqrt(a))
     r = 6371 # Radius of earth in kilometers
     return c * r
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Test")
+    parser.add_argument("input")
+    input = parser.parse_args().input
+    print(input)
+    print(haversine(52.370216, 4.895168, 52.520008, 13.404954))
